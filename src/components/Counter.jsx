@@ -1,26 +1,23 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-const easeOutQuad = (t) => t * (2 - t); // Easing function for smoother transition
-
-const Counter = ({ end, duration = 4000 }) => {
+const Counter = ({ end, duration }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const startTime = performance.now();
+    let start = 0;
+    const increment = end / (duration / 10); // Calculate increment based on duration
 
-    const animate = (currentTime) => {
-      const elapsedTime = currentTime - startTime;
-      const progress = Math.min(elapsedTime / duration, 1); // Clamp progress between 0 and 1
-      const easedProgress = easeOutQuad(progress); // Apply easing for smoother motion
-      const currentValue = Math.floor(easedProgress * end); // Calculate eased value
-      setCount(currentValue);
-
-      if (progress < 1) {
-        requestAnimationFrame(animate); // Continue animation
+    const interval = setInterval(() => {
+      start += increment;
+      if (start >= end) {
+        setCount(end);
+        clearInterval(interval);
+      } else {
+        setCount(Math.ceil(start));
       }
-    };
+    }, 10);
 
-    requestAnimationFrame(animate); // Start animation
+    return () => clearInterval(interval);
   }, [end, duration]);
 
   return <span>{count}</span>;

@@ -2,7 +2,7 @@ import React from "react";
 
 const NewSection = () => {
   return (
-    <div className="bg-[#EDEBE8] mt-1 pb-10">
+    <div className="bg-[#FFFFFF] mt-1 pb-10">
       <div className="container mx-auto px-44">
         <div className="py-5">
           <h2 className="text-[35px] font-serif leading-8 "> PROJECT UPASSHOK: <span className="font-bold">   EMPOWERING <br/> ACROSS BANDARBAN </span> </h2>

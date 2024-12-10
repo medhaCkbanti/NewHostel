@@ -127,3 +127,31 @@
       background: rgba(255, 255, 255, 0.6); /* Semi-transparent white overlay */
       z-index: 1; /* Layer above the background but below content */
     }
+
+
+/* CSS Animations */
+.left,
+.right {
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 1s ease-out;
+}
+
+.animate .slide-in-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate .slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Initial States */
+.left {
+  transform: translateX(-100px);
+}
+
+.right {
+  transform: translateX(100px);
+}

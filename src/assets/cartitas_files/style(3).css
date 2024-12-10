@@ -1,0 +1,192 @@
+/*
+Theme Name: Clean Charity
+Template: bizberg
+Text Domain: clean-charity
+Author: Bizberg Themes
+Author URI: https://bizbergthemes.com/
+Theme URI: https://bizbergthemes.com/downloads/clean-charity/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Description: Clean Charity is child theme of Bizberg WordPress Theme. Clean Charity is a clean WordPress Charity Theme which fits for all kind of Charity, Fundraising, NonProfit, NGO, Church and other non-profit charity projects website since it is a great theme that will make a model and professional website for all your needs. It is a feature-rich theme with gorgeous layout. The very base of the theme is built on Bootstrap framework which makes the theme very handy and east to use. This WordPress theme is fully responsive, cross-browser compatible, translation ready & SEO friendly. If you run into any problem while using our theme, you can refer to extensive documentation or contact our friendly support team. It fully supports Elementor, all the sections are made from Elementor. It also support GiveWP Donation Plugin.
+Tags: custom-logo,custom-menu,featured-images,threaded-comments,translation-ready,left-sidebar,right-sidebar,grid-layout,theme-options,blog,news,portfolio
+Version: 0.5
+Tested up to: 5.9
+Requires PHP: 5.6
+*/
+
+.navbar-default .navbar-nav > li > a {
+    letter-spacing: 0;
+}
+
+/** 
+* Start Services 
+*/
+
+.clean_charity_services_inner_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    padding: 50px 0 40px;
+    grid-row-gap: 50px;
+}
+
+.clean_charity_services_wrapper {
+    background: #f7f7f7;
+}
+
+.clean_charity_services_inner_wrapper .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.clean_charity_services_inner_wrapper .column h3{
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: center;
+}
+
+.clean_charity_services_inner_wrapper .column p {
+	text-align: center;
+}
+
+.clean_charity_services_inner_wrapper .column .icon {
+	margin-bottom: 15px;
+}
+
+.clean_charity_services_inner_wrapper .column .icon i {
+    background: #e0be53;
+    color: #fff;
+    font-size: 22px;
+    height: 50px;
+    width: 50px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+}
+
+.clean_charity_services_inner_wrapper .column .icon i:before {
+	display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/** 
+* End Services 
+*/
+
+/** 
+* Start Call to action 
+*/
+
+.call_to_action_wrapper .column_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.call_to_action_wrapper {
+    padding: 40px 0 40px;
+    margin-bottom: 5px;
+}
+
+.call_to_action_wrapper .column.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.call_to_action_wrapper .column.content h3{
+    text-transform: uppercase;
+}
+
+.call_to_action_wrapper .column.content h3,
+.call_to_action_wrapper .column.content p {
+    color: #fff;
+}
+
+.call_to_action_wrapper .column.content a {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.call_to_action_wrapper .column.content .button{
+    padding-top: 10px;
+}
+
+.call_to_action_wrapper .column_wrapper.no_image {
+    grid-template-columns: 1fr;
+}
+
+.call_to_action_wrapper .column_wrapper .column:first-child{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/** 
+* End Call to action 
+*/
+
+@media (max-width: 991px){
+    .clean_charity_services_inner_wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    .call_to_action_wrapper .column_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .call_to_action_wrapper .column_wrapper .column:first-child{
+        height: 250px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 412px){
+    .clean_charity_services_inner_wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
+/** 
+* Givewp CSS
+*/
+
+.single-give_forms .give_forms{
+    padding-top: 0;
+}
+
+.detail-content.single_page.eb_page .give_error, 
+.detail-content.single_page.eb_page .give_success, 
+.detail-content.single_page.eb_page .give_warning {
+    padding: 1em 1.5em 1em 2em;
+}
+
+#give_donation_receipt th {
+    padding: 15px;
+}
+
+#give_donation_receipt td {
+    padding: 12px 20px;
+}
+
+form#give-email-access-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form#give-email-access-form input#give-email {
+    width: 100%;
+}

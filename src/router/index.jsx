@@ -1,13 +1,12 @@
 import {
     createBrowserRouter,
-    RouterProvider,
-    Route,
-    Link,
+
   } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/Home";
-import Login from "../pages/Login";
+import Login from "../pages/Login"
 import Signup from "../pages/Signup";
+import Details from "../pages/Details";
 
 
 
@@ -24,6 +23,16 @@ import Signup from "../pages/Signup";
             element : <Home/>
          }
          ,
+
+         {
+
+          path : '/details/:name',
+          element : <Details/>
+
+         }
+       
+
+
 
       
 

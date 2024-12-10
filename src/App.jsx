@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 
 import "react-toastify/dist/ReactToastify.css";
 import './App.css' ;
+import FooterMain from "./components/FooterMain";
 
 
 
@@ -18,10 +19,11 @@ const App = () => {
   
         <Header />
 
-        <main className="min-h-[calc(100vh-100px)] pt-16">
+        <main className="min-h-[calc(100vh-100px)] pt-24">
           <Outlet />
         </main>
-
+        
+        <FooterMain/>
         <Footer />
     
     </>

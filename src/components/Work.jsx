@@ -42,7 +42,7 @@ const Work = () => {
   ];
 
   return (
-    <div className="bg-[#ffffff]  pt-14 pb-32">
+    <div className="bg-[#f7f5f5]  pt-14 pb-32">
       <div className="container mx-auto px-44">
         <div className="py-12">
           <h2 className="text-4xl font-bold text-center text-red-500 mb-8">

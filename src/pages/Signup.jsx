@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 
 const Signup = () => {
   return (
-    <div>
       
-    </div>
+        <div>
+            This is sign up
+        </div>
+
   );
 };
 

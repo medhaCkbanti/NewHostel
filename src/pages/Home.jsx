@@ -5,6 +5,7 @@ import Donate from "../components/Donate";
 import DonteMain from "../components/DonteMain";
 import Galary from "../components/Galary";
 import Impact from "../components/Impact";
+import Management from "../components/Management";
 
 
 import Mission from "../components/Mission";
@@ -29,6 +30,7 @@ const Home = () => {
                <Success/>
                <Commitment/>
                <DonteMain/>
+               <Management/>
                <Teacher/>
           
 
