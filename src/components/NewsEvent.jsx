@@ -3,7 +3,7 @@ import React from "react";
 const NewsEvent = () => {
   return (
     <div className="bg-[#e1e1e1] mt-10 pt-14 pb-8">
-      <div className="container mx-auto px-28">
+      <div className="container mx-auto px-10">
         <h1 className="text-center text-3xl">
 
           NEWS &<span className="font-semibold"> EVENTS </span>{" "}
@@ -11,11 +11,12 @@ const NewsEvent = () => {
         <p className="text-center mt-4 font-bold text-base">
       
           Stay up-to-date with the latest from Upasshak{" "}
+          
         </p>
 
         <div className="flex mt-14 justify-between">
-          <div className="h-[400px] w-[420px] bg-[#ffffff]">
-            <div className="h-[200px] w-[400px] mx-auto mt-2">
+          <div className="h-[400px]  w-[370px] lg:w-[420px] bg-[#ffffff]">
+            <div className="h-[200px] w-[350px] lg:w-[400px] mx-auto mt-2">
               <img
                 src="/src/assets/assest/skill-development-training.jpg"
                 className="h-full w-full "
@@ -37,8 +38,8 @@ const NewsEvent = () => {
             </div>
           </div>
 
-          <div className="h-[430px] w-[420px] bg-[#ffffff]">
-            <div className="h-[270px] w-[400px] mx-auto mt-2">
+          <div className="h-[430px] w-[370] lg:w-[420px] bg-[#ffffff]">
+            <div className="h-[270px] w-[350px] lg:w-[400px] mx-auto mt-2">
               <img
                 src="/src/assets/assest/vision-1.jpg"
                 className="h-full w-full "
@@ -101,4 +102,4 @@ const NewsEvent = () => {
   );
 };
 
-export default NewsEvent;
+export default NewsEvent; 

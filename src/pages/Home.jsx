@@ -20,7 +20,7 @@ const Home = () => {
     return (
         <div>
                <Banner/>
-               <Donate/>
+              
                <NewSection/>
                <Work/>
                <Impact/>

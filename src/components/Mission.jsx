@@ -8,7 +8,7 @@ const Mission = () => {
         
         {/* Animated Mission Text */}
         <motion.div
-          className="max-w-[520px] bg-[#0394b5] h-[500px] rounded-2xl"
+          className="w-[450px] lg:w-[520px] bg-[#0394b5] h-[430px] lg:h-[500px] rounded-2xl"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -26,7 +26,7 @@ const Mission = () => {
 
         {/* Animated Image */}
         <motion.div
-          className="w-[980px] h-[500px]"
+          className="w-[800px] lg:w-[980px] h-[430px] lg:h-[500px]"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -44,4 +44,3 @@ const Mission = () => {
 };
 
 export default Mission;
-

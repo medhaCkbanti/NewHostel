@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Galary = () => {
   return (
@@ -14,10 +15,13 @@ const Galary = () => {
               className="h-[280px] w-[630px] mx-auto mt-2 transform transition-transform duration-500 ease-in-out hover:translate-y-[-5px] hover:opacity-50"
             />
 
-            <div className="text-center">
-              <button className="bg-orange-600 text-white button-text px-4 py-2 text-center mt-8 hover:scale-125 transition duration-300 ease-in-out">
-                VIEW PHOTO GALLERY
-              </button>
+            <div to="/images" className="text-center">
+                 
+                 <Link to="/images">
+                     <button className="bg-orange-600 text-white button-text px-4 py-2 text-center mt-8 hover:scale-125 transition duration-300 ease-in-out">
+                             VIEW PHOTO GALLERY
+                     </button>
+                </Link>
             </div>
           </div>
 

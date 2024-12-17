@@ -42,17 +42,17 @@ const Work = () => {
   ];
 
   return (
-    <div className="bg-[#f7f5f5]  pt-14 pb-32">
-      <div className="container mx-auto px-44">
+    <div className="bg-[#f7f5f5] pt-14 pb-32">
+      <div className="container mx-auto px-36">
         <div className="py-12">
           <h2 className="text-4xl font-bold text-center text-red-500 mb-8">
             OUR WORK
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 px-4 md:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 px-4 justify-items-center items-center">
             {workItems.map((item, index) => (
               <div
                 key={index}
-                className="max-w-80 group bg-white hover:shadow-xl rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+                className="max-w-xs group bg-white hover:shadow-xl rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
               >
                 <img
                   src={item.imgSrc}
@@ -60,9 +60,9 @@ const Work = () => {
                   className="w-full h-40 object-cover group-hover:opacity-80 transition-opacity duration-300"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  <p className="text-gray-600 mb-4 font-serif">{item.description}</p>
-                  <button className="text-red-500 font-medium hover:underline">
+                  <h3 className="text-xl font-semibold mb-2 text-center">{item.title}</h3>
+                  <p className="text-gray-600 mb-4 font-serif text-center">{item.description}</p>
+                  <button className="text-red-500 font-medium hover:underline block mx-auto">
                     READ MORE
                   </button>
                 </div>
